@@ -19,18 +19,28 @@ module.exports = {
       network_id: 5,
     },
 
-    mocha: {
-    },
+    mumbai: {
+      provider: function () {
+        return new HDWalletProvider(
+          `${process.env.MNEMONIC}`,
+          `https://polygon-mumbai.g.alchemy.com/v2/${process.env.MUMBAI_ID}`
+        )
+      },
+      network_id: 80001,
+    }
+  },
 
-    // Configure your compilers
-    compilers: {
-      solc: {
-        version: "0.8.17", // Fetch exact version from solc-bin (default: truffle's version)
-        settings: {          // See the solidity docs for advice about optimization and evmVersion
-          optimizer: {
-            enabled: false,
-            runs: 200,
-          }
+  mocha: {
+  },
+
+  // Configure your compilers
+  compilers: {
+    solc: {
+      version: "0.8.17", // Fetch exact version from solc-bin (default: truffle's version)
+      settings: {          // See the solidity docs for advice about optimization and evmVersion
+        optimizer: {
+          enabled: false,
+          runs: 200,
         }
       }
     }
