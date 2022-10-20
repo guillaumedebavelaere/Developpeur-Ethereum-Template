@@ -5,7 +5,7 @@ pragma solidity 0.8.17;
 contract SimpleStorage {
     uint data;
 
-    constructor(uint _data) {
+    constructor(uint _data) payable {
         data = _data;
     }
 
