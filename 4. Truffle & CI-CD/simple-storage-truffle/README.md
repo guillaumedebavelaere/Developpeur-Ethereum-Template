@@ -32,3 +32,13 @@ https://github.com/adrianmcli/eth95
 
 # install open zeppelin
 `npm install -prefix . @openzeppelin/contracts`
+
+# Truffle test
+`truffle test test/TestSimpleStorage.sol --network develop`
+
+# helpers pour les tests en js
+```js
+const { BN, expectRevert, expectEvent } = require('@openzeppelin/test-helpers');
+const { expect } = require('chai');
+const constants = require('@openzeppelin/test-helpers/src/constants');
+```

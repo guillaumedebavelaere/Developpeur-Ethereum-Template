@@ -40,3 +40,15 @@ npx hardhat run scripts/deploy.js
 ### Tasks
 https://ethereum.stackexchange.com/questions/83656/where-does-the-line-blur-between-a-task-and-a-script-in-hardhat/93433#93433
 
+### Type script and openseppelin test-helpers
+
+`npm install --prefix . --save-dev @openzeppelin/test-helpers`
+`npm install --prefix . --save-dev @nomiclabs/hardhat-web3 web3`
+
+```
+add this to your hardhat.config.ts:
+
+import "@nomiclabs/hardhat-web3";
+
+```
+
