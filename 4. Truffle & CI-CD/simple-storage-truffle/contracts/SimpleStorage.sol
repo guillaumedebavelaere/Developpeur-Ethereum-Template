@@ -3,19 +3,22 @@
 pragma solidity 0.8.17;
 
 contract SimpleStorage {
-    uint  storageData;
+    enum StorageData {
+        VALUE1, VALUE2, VALUE3
+    }
+    StorageData public storageData;
 
-    event dataStored(uint _data, address _addr);
+    event dataStored(StorageData _data, address _addr);
  
 
-    function get() public view returns(uint) {
+    function get() public view returns(StorageData) {
         return storageData;    
     }
     
-    function set(uint n) public {
-        require(n!=0, "vous ne pouvez pas mettre une valeur nulle");
-        storageData = n;
-        emit dataStored(n,msg.sender);    
+    function set(StorageData _storageData) public {
+        require(_storageData!=StorageData.VALUE1, "vous ne pouvez pas mettre la premiere valeur!");
+        storageData = _storageData;
+        emit dataStored(_storageData,msg.sender);    
     }
 
 }

@@ -13,19 +13,19 @@ contract('SimpleStorage2', accounts => {
 
     });
 
-    it("...should store the value 89.", async () => {
-      await simpleStorageInstance.set(89, { from: owner });
-      const storedData = await simpleStorageInstance.get.call();
-      expect(storedData).to.be.bignumber.equal(new BN(89));
+    it("...should store the value 2.", async () => {
+      await simpleStorageInstance.set(2, { from: owner });
+      const storedData = await simpleStorageInstance.storageData.call();
+      expect(storedData).to.be.bignumber.equal(new BN(2));
 
     });
 
     it("should revert on value 0", async () => {
-      await expectRevert(simpleStorageInstance.set(new BN(0), { from: owner }), 'vous ne pouvez pas mettre une valeur nulle');
+      await expectRevert(simpleStorageInstance.set(new BN(0), { from: owner }), 'vous ne pouvez pas mettre la premiere valeur');
     });
 
     it("should emit event on set", async () => {
-      expectEvent(await simpleStorageInstance.set(new BN(12), { from: accounts[0] }), "dataStored", { _data: new BN(12), _addr: owner })
+      expectEvent(await simpleStorageInstance.set(new BN(2), { from: accounts[0] }), "dataStored", { _data: new BN(2), _addr: owner })
     });
 
   });
