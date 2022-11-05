@@ -1,0 +1,23 @@
+https://github.com/clesaege/HackSmartContract/blob/master/contracts/SolidityHackingWorkshopV8.sol
+
+
+Exercice 1:
+ DOS car pas de limite sur la boucle. On peut augmenter la taille du tableau
+
+ Exercice 2:
+ Pb de division ex 1e18/3 = 333,333,333,333,333,333 + 1/3 
+ donc on ne passera jamais le require l 54
+
+
+ Exercice 3: on peut voir le choix dans etherscan
+
+ Exercice 4: reentrancy l.115
+
+ Exercice 5: pb front running
+
+ Exercice 6: int => on peut envoyer un nombre negatif et donc augmenter sa balance
+
+ Exercice 7: Pb tokenemics: on achete vend directe en gagnant
+
+ Exercice8: Pb pas de reset slot => il reste 1 ether que l'on peut retrouver 
+
