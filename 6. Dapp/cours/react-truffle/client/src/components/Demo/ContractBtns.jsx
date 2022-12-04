@@ -26,7 +26,8 @@ function ContractBtns({ setValue, setGreeter }) {
       return;
     }
     const newValue = parseInt(inputValue);
-    await contract.methods.write(newValue).send({ from: accounts[0] });
+    await contract.methods.write(newValue).send({ from: accounts[0] })
+      .catch(console.log);
   };
 
   const handleInputGreeterChange = e => {
