@@ -1,0 +1,12 @@
+{
+    "description": "image 2",
+    "image": "https://gateway.pinata.cloud/ipfs/QmWfKWgazt2QMEmtBzFDqkKzA8xoJ5QsMKgTvV2gtKNjRe/2.jpeg",
+    "name": "exericesNFT",
+    "attributes": [{
+        "trait_type": "taille",
+        "value": "175"
+    }, {
+        "trait_type": "cheveux",
+        "value": "jaune"
+    }]
+}

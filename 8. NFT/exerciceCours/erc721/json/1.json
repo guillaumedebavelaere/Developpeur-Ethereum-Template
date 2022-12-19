@@ -1,0 +1,12 @@
+{
+    "description": "image 1",
+    "image": "https://gateway.pinata.cloud/ipfs/QmWfKWgazt2QMEmtBzFDqkKzA8xoJ5QsMKgTvV2gtKNjRe/1.jpeg",
+    "name": "exercicesNFT",
+    "attributes": [{
+        "trait_type": "taille",
+        "value": "165"
+    }, {
+        "trait_type": "cheveux",
+        "value": "pas"
+    }]
+}

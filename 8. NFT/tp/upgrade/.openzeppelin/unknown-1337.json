@@ -1,0 +1,56 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x75E7962401990B87a2f74Ae352C84f9999A25Bf5",
+    "txHash": "0x6d97810b69788a06dc8f8baa2956395ba816dad4a8bc968ff0c64cb3640c7a6c"
+  },
+  "proxies": [
+    {
+      "address": "0x405AD4382D3D752aC4C0C87D5C671eB088659aAe",
+      "txHash": "0x5dd62856230856699d1c1e055791cd5990e994608df9a818a2c03293787c48bb",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "96eaec2138955b52d6a8a3c10a8a9e6ee44963735f2f63a729ca2984c236bb92": {
+      "address": "0x4A2846F109F7BD3ec74675FCec6007325362952D",
+      "txHash": "0xa1541db3e807b199cb4b1e44db1962aca21910ec390f889a20a3986e3db45937",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "contract": "Storage",
+            "label": "number",
+            "type": "t_uint256",
+            "src": "../project:/contracts/Storage.sol:12"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          }
+        }
+      }
+    },
+    "bd51c3a8456a10f7a0300c9ec6434957688fba4729d72ba05e015ac905efdb49": {
+      "address": "0x0400ccab50eD9957689eE29B0c62573a78d100fd",
+      "txHash": "0xf091028692e9d177bd16befd015c6d075488f28f8faa4e94ef0a74f04e268039",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "contract": "Storage2",
+            "label": "number",
+            "type": "t_uint256",
+            "src": "../project:/contracts/Storage2.sol:12"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          }
+        }
+      }
+    }
+  }
+}
